@@ -77,8 +77,13 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td class="fields">Email:</td>
+                            <td class="fields">Login Id:</td>
                             <td id="emailId"></td>
+                            <!--<td><a href="#" data-modal-target="#email">change</a></td>-->
+                        </tr>
+                        <tr>
+                            <td class="fields">Contact Email:</td>
+                            <td id="contactEmailId"></td>
                             <td><a href="#" data-modal-target="#email">change</a></td>
                         </tr>
                         <tr>
@@ -125,6 +130,7 @@
         </div>
     </div>
 
+    <!--email change-->
     <div class="change-modal modal-open " id="email">
         <div class="modal-header">
             Change Email
@@ -135,11 +141,12 @@
                 Save
             </div>
         </div>
-        <div class="modal-close" data-close-button>
+        <div class="modal-close" id="emailClose" data-close-button>
             x
         </div>
     </div>
 
+    <!--email change-->
     <div class="change-modal  modal-open" id="phone">
         <div class="modal-header">
             Change Phone
@@ -150,28 +157,36 @@
                 Save
             </div>
         </div>
-        <div class="modal-close" data-close-button>
+        <div class="modal-close" id="phNoClose" data-close-button>
             x
         </div>
     </div>
 
+    <!--email change-->
     <div class="change-modal modal-open" id="addr">
         <div class="modal-header">
             Change Address
         </div>
         <div class="modal-content">
-            <span class="modal-fields">New Address:</span><input class="modal-input" type="text" placeholder="Address..." id="naddr">
+            <span class="modal-fields">New Address:</span>
+            <span class="modal-fields">Line 1:</span><input class="modal-input" type="text" placeholder="Address Line 1..." id="naddrL1">
+            <span class="modal-fields">Line 2:</span><input class="modal-input" type="text" placeholder="Address Line 2..." id="naddrL2">
+            <span class="modal-fields">District:</span><input class="modal-input" type="text" placeholder="District" id="naddrDistrict">
+            <span class="modal-fields">Pin Code:</span><input class="modal-input" type="number" placeholder="Pin Code" id="naddrPin">
+            <span class="modal-fields">City:</span><input class="modal-input" type="text" placeholder="City" id="naddrCity">
             <div class="modal-save-btn" id="addr-change">
                 Save
             </div>
         </div>
-        <div class="modal-close" data-close-button>
+        <div class="modal-close" id="addrClose" data-close-button>
             x
         </div>
     </div>
 
     <script defer rel="text/javascript" src="./Backend/JS/ProfileUI.js"></script>
     <script defer rel="text/javascript" src="./Backend/JS/redirect.js"></script>
+
+
 </body>
 
 </html>
